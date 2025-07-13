@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>expensve</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="center">
+    <h1>expensve</h1>
+    <p>Almost accurate price calculator for GAG<br>By hans32<br><br></p>
+
+    <div class="dropdown" id="fruit">
+      <select id="fruitSelect">
+        <optgroup label="Common">
+          <option value="carrot">Carrot</option>
+          <option value="strawberry">Strawberry</option>
+          <option value="blueberry">Blueberry</option>
+          <option value="tomato">Tomato</option>
+          <option value="orange tulip">Orange Tulip</option>
+        </optgroup>
+        <optgroup label="Prismatic">
+          <option value="sugar apple">Sugar Apple</option>
+          <option value="ember lily">Ember Lily</option>
+          <option value="beanstalk">Beanstalk</option>
+        </optgroup>
+        <optgroup label="Popular">
+          <option value="moon melon">Moon Melon</option>
+          <option value="bone blossom">Bone Blossom</option>
+          <option value="candy blossom">Candy Blossom</option>
+          <option value="fossilight">Fossilight</option>
+        </optgroup>
+      </select>
+      <div class="sub">
+        <p id="fruit_baseprice">Pls select</p>
+        <p id="fruit_baseweight">Pls select</p>
+      </div>
+    </div>
+
+    <div class="input-kg-container">
+      <input type="number" placeholder="Enter weight">
+      <span>kg</span>
+    </div>
+
+    <div class="dropdown" id="growth_mutation">
+      <select id="growth_mutation_select">
+        <option value="none">None</option>
+        <option value="gold">Gold</option>
+        <option value="rainbow">Rainbow</option>
+
+      </select>
+      <div class="sub">
+        <p>Growth Mutation</p>
+      </div>
+    </div>
+
+
+    <div class="dropdown" id="mutations">
+      <select id="mutationSelect" multiple size="8">
+        <option value="none">None</option>
+        <option value="wet">Wet ×2</option>
+        <option value="windstruck">Windstruck ×2</option>
+        <option value="moonlit">Moonlit ×2</option>
+        <option value="clay">Clay ×3</option>
+        <option value="chilled">Chilled ×2</option>
+        <option value="choc">Choc ×2</option>
+        <option value="pollinated">Pollinated ×3</option>
+        <option value="sandy">Sandy ×3</option>
+        <option value="bloodlit">Bloodlit ×4</option>
+        <option value="twisted">Twisted ×5</option>
+        <option value="drenched">Drenched ×5</option>
+        <option value="cloudtouched">Cloudtouched ×5</option>
+        <option value="frozen">Frozen ×10</option>
+        <option value="tempestuous">Tempestuous ×19</option>
+        <option value="aurora">Aurora ×90</option>
+        <option value="burnt">Burnt ×4</option>
+        <option value="verdant">Verdant ×4</option>
+        <option value="wiltproof">Wiltproof ×4</option>
+        <option value="plasma">Plasma ×5</option>
+        <option value="honeyglazed">HoneyGlazed ×5</option>
+        <option value="heavenly">Heavenly ×5</option>
+        <option value="fried">Fried ×8</option>
+        <option value="amber">Amber ×10</option>
+        <option value="cooked">Cooked ×10</option>
+        <option value="oldamber">OldAmber ×20</option>
+        <option value="zombified">Zombified ×25</option>
+        <option value="molten">Molten ×25</option>
+        <option value="ceramic">Ceramic ×30</option>
+        <option value="ancientamber">AncientAmber ×50</option>
+        <option value="friendbound">Friendbound ×70</option>
+        <option value="infected">Infected ×75</option>
+        <option value="sundried">Sundried ×85</option>
+        <option value="paradisal">Paradisal ×100</option>
+        <option value="alienlike">Alienlike ×100</option>
+        <option value="shocked">Shocked ×100</option>
+        <option value="celestial">Celestial ×120</option>
+        <option value="galactic">Galactic ×120</option>
+        <option value="disco">Disco ×125</option>
+        <option value="meteoric">Meteoric ×125</option>
+        <option value="voidtouched">Voidtouched ×135</option>
+        <option value="dawnbound">Dawnbound ×150</option>
+        <option value="historic amber">Historic Amber ×150</option>
+      </select>
+      <div class="sub">
+        <p>Mutations (Multi-select)</p>
+        
+      </div>
+
+    </div>
+
+    <h1>RESULT: $0</h1>
+
+      <a href="https://github.com/hansthirtytwo/expensve"><svg xmlns="http://www.w3.org/2000/svg" width="98" height="96"><path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#24292f"/></svg></a>
+
+  </div>
+
+
+  <script>
+    let fruitData = {};
+    fetch("fruits.json")
+      .then(response => response.json())
+      .then(data => fruitData = data)
+      .catch(err => console.error("Failed to load fruit data:", err));
+    const fruitSelect = document.getElementById("fruitSelect");
+    const basePriceElem = document.getElementById("fruit_baseprice");
+    const baseWeightElem = document.getElementById("fruit_baseweight");
+    fruitSelect.addEventListener("change", () => {
+      const selectedFruit = fruitSelect.value;
+      const data = fruitData[selectedFruit];
+      if (data) {
+        basePriceElem.textContent = `¢${data.base_price}`;
+        baseWeightElem.textContent = `${data.base_weight}kg`;
+      }
+    });
+
+    const mutationSelect = document.getElementById("growth_mutation_select");
+    const mutationContainer = document.getElementById("growth_mutation");
+    mutationSelect.addEventListener("change", () => {
+      const selectedMutation = mutationSelect.value;
+      if (selectedMutation === "gold") {
+        mutationContainer.style.background = "linear-gradient(126deg,rgba(255, 217, 0, 1) 1%, rgba(255, 235, 145, 1) 53%, rgba(255, 179, 0, 1) 100%)";
+      } else if (selectedMutation === "rainbow") {
+        mutationContainer.style.background = "linear-gradient(126deg,rgba(255, 122, 122, 1) 0%, rgba(255, 181, 112, 1) 38%, rgba(89, 186, 255, 1) 68%, rgba(227, 89, 255, 1) 100%)";
+      } else {
+        mutationContainer.removeAttribute("style"); // reset to CSS default
+      }
+    });
+
+    // --- Real-time total price calculation logic ---
+    const weightInput = document.querySelector(".input-kg-container input");
+    const resultDisplay = document.querySelector("h1:last-of-type");
+
+    // growth mutation multipliers
+    const growthMutationMultipliers = {
+      none: 1,
+      gold: 20,
+      rainbow: 50,
+    };
+
+    // mutation multipliers
+    const mutationMultipliers = {
+      none: 1,
+      celestial: 120,
+      shocked: 100,
+      wet: 2,
+      windstruck: 2,
+      moonlit: 2,
+      clay: 3,
+      chilled: 2,
+      choc: 2,
+      pollinated: 3,
+      sandy: 3,
+      bloodlit: 4,
+      twisted: 5,
+      drenched: 5,
+      cloudtouched: 5,
+      frozen: 10,
+      tempestuous: 19,
+      aurora: 90,
+      burnt: 4,
+      verdant: 4,
+      wiltproof: 4,
+      plasma: 5,
+      honeyglazed: 5,
+      heavenly: 5,
+      fried: 8,
+      amber: 10,
+      cooked: 10,
+      oldamber: 20,
+      zombified: 25,
+      molten: 25,
+      ceramic: 30,
+      ancientamber: 50,
+      friendbound: 70,
+      infected: 75,
+      sundried: 85,
+      paradisal: 100,
+      alienlike: 100,
+      galactic: 120,
+      disco: 125,
+      meteoric: 125,
+      voidtouched: 135,
+      dawnbound: 150,
+      "historic amber": 150,
+    };
+
+    function updateTotalPrice() {
+      const fruit = fruitSelect.value;
+      const data = fruitData[fruit];
+      if (!data) return;
+
+      const baseValue = parseFloat(data.base_price);
+      const baseWeight = parseFloat(data.base_weight);
+      const weight = parseFloat(weightInput.value) || 0;
+
+      // Crop Value
+      const cropValue = baseValue * Math.pow(weight / baseWeight, 2);
+
+      // Growth Mutation Multiplier
+      const growthMutation = mutationSelect.value;
+      const growthMultiplier = growthMutationMultipliers[growthMutation] || 1;
+
+      // Mutation Multiplier
+      const selectedMutations = Array.from(document.getElementById("mutationSelect").selectedOptions).map(opt => opt.value);
+      const mutationSum = selectedMutations.reduce((sum, key) => sum + ((mutationMultipliers[key] || 0) - 1), 0);
+      const mutationCount = selectedMutations.length;
+      const mutationMultiplier = growthMultiplier * (1 + mutationSum);
+
+      const total = cropValue * mutationMultiplier;
+      resultDisplay.textContent = `RESULT: $${total.toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
+    }
+
+    // trigger update on all inputs
+    fruitSelect.addEventListener("change", updateTotalPrice);
+    weightInput.addEventListener("input", updateTotalPrice);
+    mutationSelect.addEventListener("change", updateTotalPrice);
+    document.getElementById("mutationSelect").addEventListener("change", updateTotalPrice);
+  </script>
+</body>
+
+</html>

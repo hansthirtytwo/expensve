@@ -1,0 +1,50 @@
+{ 
+    "carrot": {
+        "base_price": 20,
+        "base_weight": 0.28
+    },
+    "strawberry": {
+        "base_price": 15,
+        "base_weight": 0.30
+    },
+    "blueberry": {
+        "base_price": 20,
+        "base_weight": 0.20
+    },
+    "tomato": {
+        "base_price": 30,
+        "base_weight": 0.50
+    },
+    "orange tulip": {
+        "base_price": 850,
+        "base_weight": 0.05
+    },
+    "beanstalk": {
+        "base_price": "1000000",
+        "base_weight": "30"
+    },
+    "sugar apple": {
+        "base_price": 50000,
+        "base_weight": 9.00
+    },
+    "ember lily": {
+        "base_price": 66666,
+        "base_weight": 12.00
+    },
+    "moon melon": {
+        "base_price": 18000,
+        "base_weight": 18.00
+    },
+    "bone blossom": {
+        "base_price": 250000,
+        "base_weight": 8
+    },
+    "candy blossom": {
+        "base_price": 89000,
+        "base_weight": 3
+    },
+    "fossilight": {
+        "base_price": 80000,
+        "base_weight": 4
+    }
+}
